@@ -1,7 +1,8 @@
 import express from "express";
 // DB
 import database from './database.js';
-
+// Routes
+import postDataRoute from './routes/postData.js';
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.set("port", process.env.PORT || 3000);
 
 
 // Routes
-
+app.use(postDataRoute);
 
 // Middlewares
 

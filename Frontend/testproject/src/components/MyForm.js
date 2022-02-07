@@ -15,7 +15,7 @@ const MyForm = () => {
           <label htmlFor="email">Email</label>
           <input type="email" />
 
-          <button class="btn-form" type="submit">
+          <button className="btn-form" type="submit">
             Send!
           </button>
         </div>

@@ -3,6 +3,7 @@ import MyForm from '../components/MyForm';
 import MyData from '../components/MyData';
 // Styles
 import '../styles/MyForm.css';
+import '../styles/MyData.css';
 
 function App() {
   return (

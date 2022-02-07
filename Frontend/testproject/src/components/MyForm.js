@@ -19,9 +19,8 @@ const MyForm = () => {
   };
 
   const handleSubmit = (e) => {
-    if (name && lastname && email) {
-
-    } else {
+    if (!name || !lastname || !email) {
+      e.preventDefault();
       console.warn("There are empty fields yet");
     };
   };
@@ -29,7 +28,7 @@ const MyForm = () => {
   return (
     <div>
       <h1>This is the form!</h1>
-      <form className="my-form-container">
+      <form className="my-form-container" action="../../Backend/" method="POST">
         <div>
           <label htmlFor="name">Name</label>
           <input type="text" value={name} onChange={handleName}/>
